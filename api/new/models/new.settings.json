@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "news",
+  "info": {
+    "name": "new"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "resource": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "create_time": {
+      "type": "string"
+    },
+    "update_time": {
+      "type": "string"
+    },
+    "public_time": {
+      "type": "string"
+    }
+  }
+}

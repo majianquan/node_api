@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "readmes",
+  "info": {
+    "name": "readme"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
